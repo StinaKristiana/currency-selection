@@ -1,0 +1,165 @@
+$box-top: #e5e5e5;
+
+$box-bot: #ececec;
+$box-bot-border: #a3a3a3;
+
+$X: "x";
+$dark-x: #333333;
+$red-x: #ff0200;
+
+$blue-font: #104371;
+$black-font: black;
+
+.full-screen {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.main-box {
+	border: solid $box-bot-border 0.1vh;
+	padding: 0;
+	border-radius: 0.5vh;
+  box-shadow: $box-bot-border+ab 0.2vh 0.2vh 0.5vh;
+  min-width: 50vh;
+}
+
+.currency-container {
+	background-color: $box-bot;
+	margin: 0;
+	padding: 0 1vh;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border: 0.1vh $box-bot-border solid;
+	cursor: pointer;
+}
+
+.currency-container span {
+	font-size: 2.2vh;
+	margin: 0 0.5vh;
+	color: $blue-font;
+}
+
+.currency-container:hover {
+	filter: brightness(0.95);
+}
+
+.currency-container-active {
+	background-color: white;
+	margin: 0;
+	padding: 0 1vh;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border: 0.1vh $box-bot-border solid;
+	cursor: pointer;
+}
+
+.currency-container-active span {
+	font-size: 2.2vh;
+	margin: 0 0.5vh;
+	color: $blue-font;
+}
+
+input[type="checkbox"] {
+	-webkit-appearance: initial;
+	appearance: initial;
+	width: 1.6vh;
+	height: 1.6vh;
+	border: 0.1vh $box-bot-border solid;
+	position: relative;
+	border-radius: 0.5vh;
+}
+
+input[type="checkbox"]:focus {
+	outline: none;
+}
+
+input[type="checkbox"]:checked:after {
+	content: $X;
+	font-size: 2vh;
+	color: $red-x;
+	position: absolute;
+	left: 50%;
+	top: 45%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.currency-container-selected {
+	background-color: $box-top;
+	margin: 0;
+	padding: 0 1vh;
+	height: 100%;
+
+	width: 98%;
+	border-radius: 0.3vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.currency-container-selected span {
+	font-size: 1.9vh;
+	color: $black-font;
+}
+
+.column-style {
+	height: 4vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 1vh;
+	padding: 0;
+	// border: #292929 solid 1px
+}
+
+.currency-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 1vh;
+}
+
+.selected-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 1vh;
+}
+
+a.boxclose {
+	position: absolute;
+	right: -1vh;
+	top: -1vh;
+	cursor: pointer;
+	border: 0.2vh solid white;
+	border-radius: 2vh;
+	background: $dark-x;
+	font-size: 1.8vh;
+	display: inline-block;
+	line-height: 0px;
+	padding: 5.5% 0 0 3%;
+	height: 2vh;
+	width: 2vh;
+	text-decoration: none;
+}
+a.boxclose:hover {
+	background: black;
+
+	filter: invert(1);
+}
+
+.boxclose:before {
+	content: $X;
+	color: white;
+}
