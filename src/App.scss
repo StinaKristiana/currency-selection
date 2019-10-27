@@ -22,8 +22,8 @@ $black-font: black;
 	border: solid $box-bot-border 0.1vh;
 	padding: 0;
 	border-radius: 0.5vh;
-  box-shadow: $box-bot-border+ab 0.2vh 0.2vh 0.5vh;
-  min-width: 50vh;
+	box-shadow: $box-bot-border+ab 0.2vh 0.2vh 0.5vh;
+	min-width: 50vh;
 }
 
 .currency-container {
@@ -82,11 +82,11 @@ input[type="checkbox"]:focus {
 
 input[type="checkbox"]:checked:after {
 	content: $X;
-	font-size: 2vh;
+	font-size: 1.8vh;
 	color: $red-x;
 	position: absolute;
-	left: 50%;
-	top: 45%;
+	left: 0.7vh;
+	top: 0.65vh;
 	-webkit-transform: translate(-50%, -50%);
 	-moz-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
@@ -118,7 +118,6 @@ input[type="checkbox"]:checked:after {
 	align-items: center;
 	margin: 1vh;
 	padding: 0;
-	// border: #292929 solid 1px
 }
 
 .currency-box {
@@ -148,7 +147,7 @@ a.boxclose {
 	font-size: 1.8vh;
 	display: inline-block;
 	line-height: 0px;
-	padding: 5.5% 0 0 3%;
+	padding: 0.71vh 0 0 0.35vh;
 	height: 2vh;
 	width: 2vh;
 	text-decoration: none;
