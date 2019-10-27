@@ -1,6 +1,6 @@
 ### Currency selection
 
-**Note: Homework for Mintoss.**
+**Note: Homework for Mintos.**
 
 
 
